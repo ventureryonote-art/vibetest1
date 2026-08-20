@@ -149,3 +149,177 @@ code {
   padding: 0.1em 0.4em;
   font-size: 0.9em;
 }
+
+/* =========================================================
+   トップページ用
+   ========================================================= */
+.section {
+  margin-top: var(--space-16);
+}
+
+.section-title {
+  font-size: var(--text-2xl);
+  line-height: 1.4;
+  font-weight: 800;
+  margin: 0 0 var(--space-6);
+}
+
+.body-text {
+  margin: var(--space-6) 0 0;
+}
+
+/* 3つのチャネル */
+.channel-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--color-border);
+}
+
+.channel {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1) var(--space-6);
+  align-items: baseline;
+  padding: var(--space-4) 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.channel-name {
+  flex: 0 0 7em;
+  font-weight: 700;
+}
+
+.channel-desc {
+  color: var(--color-text-muted);
+}
+
+/* 朝に開く画面（表示例） */
+.screen {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: var(--space-4) var(--space-6) var(--space-6);
+}
+
+.screen-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-4);
+  padding-bottom: var(--space-3);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.screen-title {
+  font-size: var(--text-lg);
+  font-weight: 800;
+}
+
+.screen-count {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--color-accent);
+}
+
+.screen-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.screen-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2) var(--space-4);
+  align-items: baseline;
+  justify-content: space-between;
+  padding: var(--space-4) 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.screen-person {
+  font-weight: 700;
+}
+
+.screen-meta {
+  margin-left: var(--space-3);
+  font-size: var(--text-sm);
+  font-weight: 400;
+  color: var(--color-text-muted);
+}
+
+.screen-right {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-3);
+}
+
+.tag {
+  display: inline-block;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  padding: 0 var(--space-3);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  line-height: 1.7;
+  color: var(--color-text-muted);
+}
+
+.screen-elapsed {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+}
+
+.screen-foot {
+  margin: var(--space-4) 0 0;
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+}
+
+/* やらないこと */
+.dont-list {
+  list-style: none;
+  margin: var(--space-6) 0 0;
+  padding: 0;
+}
+
+.dont-list li {
+  padding: var(--space-4) 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.dont-list li:first-child {
+  border-top: 1px solid var(--color-border);
+}
+
+.dont-reason {
+  display: block;
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+}
+
+/* CTAカードの中の余白調整 */
+.card .body-text {
+  margin-top: var(--space-3);
+}
+
+.card .button {
+  margin-top: var(--space-6);
+}
+
+/* 画面が狭いとき */
+@media (max-width: 480px) {
+  .container {
+    padding: var(--space-12) var(--space-4) var(--space-16);
+  }
+
+  .title {
+    font-size: var(--text-2xl);
+  }
+
+  .channel-name {
+    flex-basis: 100%;
+  }
+}
