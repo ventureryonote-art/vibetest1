@@ -5,19 +5,20 @@ export default function Home() {
   return (
     <main className="container">
       <h1 className="title">
-        このページは、まだ誰のものでもありません。
+        今日返信すべき人が、一目で分かる。
       </h1>
 
       <p className="lead">
-        ここに入るのは、あなたの事業の説明です。
+        LINE・電話・ホームページ。バラバラに届く体験授業の問い合わせを、1つの画面にまとめます。
         <br />
-        まず <code>docs/01_customer.md</code> に「誰の、どんな困りごとを解くのか」を書いてください。
+        朝スマホを開くと、まだ返していない人だけが並んでいます。
         <br />
-        そのあと Claude Code に、このページの書き換えを頼みます。
+        紙のノートに転記して、夜に思い出しながら返信する必要はもうありません。
       </p>
 
-      <a className="button" href="https://claude.ai/code" target="_blank" rel="noreferrer">
-        Claude Code をひらく
+      {/* ▼ リンク先は、問い合わせフォームや公式LINEのURLに差し替えてください。 */}
+      <a className="button" href="#">
+        まずは1教室で試す
       </a>
     </main>
   );
